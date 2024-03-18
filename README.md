@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ME-API NextJS
 
-## Getting Started
+Mass Effect API written in NextJS using the App Router model.
 
-First, run the development server:
+# Pre-requisites
+This project uses NodeJS 21.6.2 as specified in the `.tool-versions` file.
+
+## Using asdf
+If you have [`asdf`](https://asdf-vm.com/) installed, run this command to installed the target NodeJS version:
+
+```bash
+asdf install
+```
+
+## Other version managers (e.g. NVM)
+Install NodeJS 21.6.2 using your preferred version manager before continuing.
+
+# Setup
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application on `localhost:3000`:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Features
+This is a direct port of the original [`me-api`](https://github.com/NJWong/me-api) written in Go and deployed to **Fly.io**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The database was originally hosted using **Planetscale**. However, due to the company [retiring their Hobby tier](https://planetscale.com/blog/planetscale-forever) I've decided to make the following changes:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Host the database for *free* using [Turso](https://turso.tech/)
+* Host the Docs website for *free* on Vercel
+* Host the API for *free* on Vercel (functions)
 
-## Learn More
+## Characters
+| Endpoint | Description | Access | Status
+| --- | --- | --- | ---
+| `GET /api/characters` | Get all characters (paginated) | 🔓 Public | ❌
+| `GET /api/characters/:id` | Get character by ID | 🔓 Public | ❌
+| `POST /api/characters` | Create a new character | 🔐 Private | ❌
+| `PUT /api/characters/:id` | Update an entire character | 🔐 Private | ❌
+| `PATCH /api/characters/:id` | Update part of a character | 🔐 Private | ❌ 
+| `DELETE /api/characters/:id` | Delete a character | 🔐 Private | ❌
 
-To learn more about Next.js, take a look at the following resources:
+## Genders
+| Endpoint | Description | Access | Status
+| --- | --- | --- | ---
+| `GET /api/genders` | Get all genders (paginated) | 🔓 Public | ❌
+| `GET /api/genders/:id` | Get gender by ID | 🔓 Public | ❌
+| `POST /api/genders` | Create a new gender | 🔐 Private | ❌
+| `PUT /api/genders/:id` | Update an entire gender | 🔐 Private | ❌
+| `PATCH /api/genders/:id` | Update part of a gender | 🔐 Private | ❌ 
+| `DELETE /api/genders/:id` | Delete a gender | 🔐 Private | ❌
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Species
+| Endpoint | Description | Access | Status
+| --- | --- | --- | ---
+| `GET /api/species` | Get all species (paginated) | 🔓 Public | ❌
+| `GET /api/species/:id` | Get species by ID | 🔓 Public | ❌
+| `POST /api/species` | Create a new species | 🔐 Private | ❌
+| `PUT /api/species/:id` | Update an entire species | 🔐 Private | ❌
+| `PATCH /api/species/:id` | Update part of a species | 🔐 Private | ❌ 
+| `DELETE /api/species/:id` | Delete a species | 🔐 Private | ❌
