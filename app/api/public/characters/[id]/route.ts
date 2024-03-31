@@ -13,7 +13,14 @@ export async function GET(_: Request, meta: RouteMeta) {
       return Response.json({ status: 404, message: 'Not Found' })
     }
 
-    return Response.json({ status: 200, data: result[0] })
+    const data = result.map((character) => ({
+      id: character.id,
+      name: character.name,
+      species: `/api/public/species/${character.speciesId}`,
+      gender: `/api/public/genders/${character.genderId}`,
+    }))[0]
+
+    return Response.json({ status: 200, data })
   } catch {
     return Response.json({ status: 500, message: 'Internal Server Error' })
   }
