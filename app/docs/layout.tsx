@@ -1,4 +1,4 @@
-import Header from "@/components/admin/Header/Header"
+import Header from "@/components/docs/Header/Header"
 
 export default function AdminLayout({ children }: { children: React.ReactNode}) {
   return (

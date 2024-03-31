@@ -1,9 +1,9 @@
-import Header from '../components/Header/Header'
+import Header from "@/components/docs/Header/Header"
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
-      <Header />
+      <h1>ME-API</h1>
     </main>
-  );
+  )
 }
