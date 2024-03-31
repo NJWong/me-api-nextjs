@@ -1,11 +1,22 @@
 import { characters } from "@/drizzle/schema"
 import { db } from "@/lib/db"
+import { count } from "drizzle-orm"
+import { NextRequest } from "next/server"
 
-export async function GET() {  
+export async function GET(request: NextRequest) {  
   try {
-    const result = await db.select().from(characters).all()
+    const searchParams = request.nextUrl.searchParams
 
-    return Response.json({ status: 200, meta: {}, data: result})
+    const limitParam = searchParams.get('limit')
+    const limit = limitParam !== null ? Math.min(parseInt(limitParam), 20) : 10
+
+    const offsetParam = searchParams.get('offset')
+    const offset = offsetParam !== null ? parseInt(offsetParam) : 0
+
+    const total = await db.select({ value: count() }).from(characters)
+
+    const result = await db.select().from(characters).orderBy(characters.id).limit(limit).offset(offset)
+    return Response.json({ status: 200, meta: { total: total[0].value, limit, offset }, data: result})
   } catch {
     return Response.json({ status: 500, message: 'Internal Server Error' })
   }
