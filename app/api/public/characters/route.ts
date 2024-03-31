@@ -1,4 +1,5 @@
 import { characters } from "@/drizzle/schema"
+import { getPaginationMeta } from "@/helpers/pagination"
 import { db } from "@/lib/db"
 import { count } from "drizzle-orm"
 import { NextRequest } from "next/server"
@@ -7,11 +8,7 @@ export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams
 
-    const limitParam = searchParams.get('limit')
-    const limit = limitParam !== null ? Math.min(parseInt(limitParam), 20) : 10
-
-    const offsetParam = searchParams.get('offset')
-    const offset = offsetParam !== null ? parseInt(offsetParam) : 0
+    const { limit, offset } = getPaginationMeta(searchParams)
 
     const total = await db.select({ value: count() }).from(characters)
 
