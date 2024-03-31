@@ -24,7 +24,7 @@ export default function AdminHeader() {
           </li>
         </ul>
       </nav>
-      <Link href="/api/auth/logout" className="bg-emerald-500 px-3 py-1 rounded">Sign out</Link>
+      <Link href="/api/auth/logout" className="bg-emerald-500 px-3 py-1 rounded text-sm">Sign out</Link>
     </header>
   )
 }

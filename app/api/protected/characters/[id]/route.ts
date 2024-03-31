@@ -1,9 +1,5 @@
 type RouteMeta = { params: { id: string }}
 
-export async function POST(_: Request, meta: RouteMeta) {
-  return Response.json({ message: `POST /api/characters/${meta.params.id}` })
-}
-
 export async function PUT(_: Request, meta: RouteMeta) {
   return Response.json({ message: `PUT /api/characters/${meta.params.id}` })
 }
