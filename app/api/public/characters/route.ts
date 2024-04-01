@@ -7,11 +7,9 @@ import { NextRequest } from "next/server"
 export async function GET(request: NextRequest) {  
   try {
     const searchParams = request.nextUrl.searchParams
-
     const { limit, offset } = getPaginationMeta(searchParams)
 
     const total = await db.select({ value: count() }).from(characters)
-
     const result = await db.select().from(characters).orderBy(characters.id).limit(limit).offset(offset)
 
     const data = result.map((character) => ({
@@ -22,7 +20,7 @@ export async function GET(request: NextRequest) {
       class: character.class,
     }))
     
-    return Response.json({ status: 200, meta: { total: total[0].value, limit, offset }, data})
+    return Response.json({ status: 200, meta: { total: total[0].value, limit, offset }, data })
   } catch {
     return Response.json({ status: 500, message: 'Internal Server Error' })
   }
