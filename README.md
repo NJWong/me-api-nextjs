@@ -33,15 +33,15 @@ This is a direct port of the original [`me-api`](https://github.com/NJWong/me-ap
 
 The database was originally hosted using **Planetscale**. However, due to the company [retiring their Hobby tier](https://planetscale.com/blog/planetscale-forever) I've decided to make the following changes:
 
-* Host the database for *free* using [Turso](https://turso.tech/)
-* Host the Docs website for *free* on Vercel
+* Host the database for *free* using [Turso](https://turso.tech/) (sqlite)
+* Host the Docs website for *free* on Vercel (static Next website)
 * Host the API for *free* on Vercel (functions)
 
 ## Characters
 | Endpoint | Description | Access | Status
 | --- | --- | --- | ---
-| `GET /api/characters` | Get all characters (paginated) | 🔓 Public | ❌
-| `GET /api/characters/:id` | Get character by ID | 🔓 Public | ❌
+| `GET /api/characters` | Get all characters (paginated) | 🔓 Public | ✅ 
+| `GET /api/characters/:id` | Get character by ID | 🔓 Public | ✅
 | `POST /api/characters` | Create a new character | 🔐 Private | ❌
 | `PUT /api/characters/:id` | Update an entire character | 🔐 Private | ❌
 | `PATCH /api/characters/:id` | Update part of a character | 🔐 Private | ❌ 
@@ -50,8 +50,8 @@ The database was originally hosted using **Planetscale**. However, due to the co
 ## Genders
 | Endpoint | Description | Access | Status
 | --- | --- | --- | ---
-| `GET /api/genders` | Get all genders (paginated) | 🔓 Public | ❌
-| `GET /api/genders/:id` | Get gender by ID | 🔓 Public | ❌
+| `GET /api/genders` | Get all genders (paginated) | 🔓 Public | ✅
+| `GET /api/genders/:id` | Get gender by ID | 🔓 Public | ✅
 | `POST /api/genders` | Create a new gender | 🔐 Private | ❌
 | `PUT /api/genders/:id` | Update an entire gender | 🔐 Private | ❌
 | `PATCH /api/genders/:id` | Update part of a gender | 🔐 Private | ❌ 
@@ -60,8 +60,8 @@ The database was originally hosted using **Planetscale**. However, due to the co
 ## Species
 | Endpoint | Description | Access | Status
 | --- | --- | --- | ---
-| `GET /api/species` | Get all species (paginated) | 🔓 Public | ❌
-| `GET /api/species/:id` | Get species by ID | 🔓 Public | ❌
+| `GET /api/species` | Get all species (paginated) | 🔓 Public | ✅
+| `GET /api/species/:id` | Get species by ID | 🔓 Public | ✅
 | `POST /api/species` | Create a new species | 🔐 Private | ❌
 | `PUT /api/species/:id` | Update an entire species | 🔐 Private | ❌
 | `PATCH /api/species/:id` | Update part of a species | 🔐 Private | ❌ 
