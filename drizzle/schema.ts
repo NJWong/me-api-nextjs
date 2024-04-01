@@ -1,3 +1,4 @@
+import { sql } from "drizzle-orm"
 import { text, integer, sqliteTable } from "drizzle-orm/sqlite-core"
 
 export const genders = sqliteTable("genders", {
@@ -26,3 +27,19 @@ export const characters = sqliteTable("characters", {
 
 export type Character = typeof characters.$inferSelect
 export type NewCharacter = typeof characters.$inferInsert
+
+export const affiliations = sqliteTable("affiliations", {
+  id: integer("id").primaryKey(),
+  name: text("name"),
+})
+
+export type Affiliation = typeof affiliations.$inferSelect
+export type NewAffiliation = typeof affiliations.$inferInsert
+
+export const planets = sqliteTable("planets", {
+  id: integer("id").primaryKey(),
+  name: text("name"),
+})
+
+export type Planet = typeof planets.$inferSelect
+export type NewPlanet = typeof planets.$inferInsert
