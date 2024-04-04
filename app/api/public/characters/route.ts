@@ -15,9 +15,9 @@ export async function GET(request: NextRequest) {
     const data = result.map((character) => ({
       id: character.id,
       name: character.name,
-      species: `/api/public/species/${character.speciesId}`,
-      gender: `/api/public/genders/${character.genderId}`,
-      class: character.class,
+      speciesUrl: `/api/public/species/${character.species}`,
+      genderUrl: `/api/public/genders/${character.gender}`,
+      roles: character.roles?.split('|') ?? [],
     }))
     
     return Response.json({ status: 200, meta: { total: total[0].value, limit, offset }, data })

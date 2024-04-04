@@ -16,8 +16,9 @@ export async function GET(_: Request, meta: RouteMeta) {
     const data = result.map((character) => ({
       id: character.id,
       name: character.name,
-      species: `/api/public/species/${character.speciesId}`,
-      gender: `/api/public/genders/${character.genderId}`,
+      speciesUrl: `/api/public/species/${character.species}`,
+      genderUrl: `/api/public/genders/${character.gender}`,
+      roles: character.roles?.split('|') ?? [],
     }))[0]
 
     return Response.json({ status: 200, data })
