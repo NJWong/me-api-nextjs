@@ -15,14 +15,14 @@ async function main() {
 
   console.log('--- db-reset starting ---')
   
+  console.log('Resetting characters table...')
+  await db.delete(characters)
+
   console.log('Resetting genders table...')
   await db.delete(genders)
 
   console.log('Resetting species table...')
   await db.delete(species)
-
-  console.log('Resetting characters table...')
-  await db.delete(characters)
   
   console.log('--- db-reset completed ---\n')
 }
