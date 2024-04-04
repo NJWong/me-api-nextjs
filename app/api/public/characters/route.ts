@@ -18,6 +18,7 @@ export async function GET(request: NextRequest) {
       speciesUrl: `/api/public/species/${character.species}`,
       genderUrl: `/api/public/genders/${character.gender}`,
       roles: character.roles?.split('|') ?? [],
+      aliases: character.aliases?.split('|') ?? [],
     }))
     
     return Response.json({ status: 200, meta: { total: total[0].value, limit, offset }, data })

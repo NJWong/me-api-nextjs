@@ -19,6 +19,7 @@ export async function GET(_: Request, meta: RouteMeta) {
       speciesUrl: `/api/public/species/${character.species}`,
       genderUrl: `/api/public/genders/${character.gender}`,
       roles: character.roles?.split('|') ?? [],
+      aliases: character.aliases?.split('|') ?? [],
     }))[0]
 
     return Response.json({ status: 200, data })
