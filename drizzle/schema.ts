@@ -18,9 +18,9 @@ export type NewSpecies = typeof species.$inferInsert
 
 export const characters = sqliteTable("characters", {
   id: integer("id", { mode: 'number' }).primaryKey({ autoIncrement: true }),
-  name: text("name"),
-  species: integer("species").references(() => species.id),
-  gender: integer("gender").references(() => genders.id),
+  name: text("name").notNull(),
+  species: integer("species").references(() => species.id).notNull(),
+  gender: integer("gender").references(() => genders.id).notNull(),
   roles: text("roles"), 
   aliases: text("aliases"),
 })
