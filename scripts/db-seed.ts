@@ -5,7 +5,7 @@ import fs from 'fs'
 import Papa from 'papaparse'
 import { z } from 'zod'
 import { createInsertSchema } from 'drizzle-zod'
-import { genders } from '@/drizzle/schema'
+import { genders, species } from '@/drizzle/schema'
 
 dotenv.config({
   path: ".env.local"
@@ -37,6 +37,25 @@ async function main() {
       }
 
       await db.insert(genders).values(validatedData)
+    }
+  })
+
+  console.log('Seeding species table...')
+  fs.readFile('data/species.csv', 'utf-8', async (err, data) => {
+    if (err) {
+      console.error(err)
+    } else {
+      const parsedCsv = Papa.parse(data, { header: true, dynamicTyping: true })
+
+      const insertSchema = createInsertSchema(species)
+      const validatedData: Array<z.TypeOf<typeof insertSchema>> = []
+
+      for (const row of parsedCsv.data) {
+        const validatedRow = insertSchema.parse(row)
+        validatedData.push(validatedRow)
+      }
+
+      await db.insert(species).values(validatedData)
     }
   })
 
