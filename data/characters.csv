@@ -1,68 +1,96 @@
 id,name,speciesId,genderId,class
-1,Commander Shepard,1,1,N7 Alliance Marine|Spectre
-2,Commander Shepard,1,2,N7 Alliance Marine|Spectre
-3,Liara T'Soni,2,3,Asari Scientist|Pure Biotic
-4,Garrus Vakarian,3,1,Turian Agent|Turian Rebel
-5,Tali'Zorah,5,2,Quarian Machinist
-6,Urdnot Wrex,6,1,Krogan Battlemaster
-7,Kaidan Alenko,1,1,Sentinal|Alliance Officer|Spectre
-8,Ashley Williams,1,2,Soldier|Alliance Officer|Spectre
-9,Richard L. Jenkins,1,1,Alliance Marine
-10,David Anderson,1,1,Alliance Officer|Citadel Councilor|Alliance Admiral
-11,Karin Chakwas,1,2,Alliance Medical Doctor
-12,Jeff "Joker" Moreau,1,1,Flight Lieutenant
-13,Donnel Udina,1,1,Alliance Ambassador|Citadel Councilor
-14,Tevos,2,3,Citadel Councilor
-15,Irissa,2,3,Citadel Councilor
-16,Valern,4,1,Citadel Councilor
-17,Esheel,4,2,Citadel Councilor
-18,Sparatus,3,1,Citadel Councilor
-19,Quentius,3,1,Citadel Councilor
-20,Nihlus Kryik,3,1,Spectre
-21,Kate Bowman,1,2,Alliance Engineer
-22,Tadius Ahern,1,1,Alliance Admiral
-23,Alud Ochren,4,1,Pinnacle Station Tech Officer
-24,Kirrahe,4,1,STG Officer
-25,Sha'ira,2,3,Asari Consort
-26,Chloe Michel,1,2,Citadel Clinician
-27,Emily Wong,1,2,Journalist
-28,Fist,1,1,Crime Lord
-29,Barla Von,7,1,Financial Adviser
-30,Conrad Verner,1,1,Commander Shepard's Biggest Fan
-31,Rita,1,2,Waitress
-32,Jenna,1,2,Waitress|C-Sec Informant
-33,Doran,7,1,Flux Owner
-34,Chellick,3,1,C-Sec Detective
-34,Jax,6,1,Krogan Arms Dealer
-36,Harkin,1,1,C-Sec Officer
-37,Venari Pallin,3,1,C-Sec Executor
-38,Septimus Oraka,3,1,Turian General
-39,Xeltan,8,1,Elcor Diplomat
-40,Calyn,8,1,Elcor Ambassador
-41,Din Korlack,7,1,Volus Ambassador
-42,Morlan,4,1,Salarian Merchant
-43,Chorban,4,1,Salarian Scientist
-44,Jahleed,7,1,Volus Scientist
-45,Schells,4,1,Salarian Inventor
-46,Samesh Bhatia,1,1,Widower
-47,Nirali Bhatia,1,2,Alliance Marine
-48,Ka'hairal Balak,11,1,Batarian Terrorist Captain
-49,Thorian,21,3,Sentient Plant
-50,Vidinos,3,1,Guard Captain
-51,Hannah Shepard,1,2,Alliance Officer
-52,Ernesto Zabaleta,1,1,Former Alliance Lieutenant
-53,Finch,1,1,Tenth Street Reds Gangster
-54,Girard,1,1,Alliance Lieutenant
-55,Talitha,1,2,Former Slave
-56,Doctor Saleon,4,1,Salarian Geneticist
-57,Tonn Actus,3,1,Turian Pirate
-58,Garoth,1,1,Council Petitioner
-59,Rebekah Petrovsky,1,2,Citizen
-60,Michael Petrovsky,1,1,Citizen
-61,Jacob Petrovsky,1,1,Citizen
+,Commander Shepard,1,1,N7 Alliance Marine|Spectre
+,Commander Shepard,1,2,N7 Alliance Marine|Spectre
+,Liara T'Soni,2,3,Asari Scientist|Pure Biotic
+,Garrus Vakarian,3,1,Turian Agent|Turian Rebel
+,Tali'Zorah,5,2,Quarian Machinist
+,Urdnot Wrex,6,1,Krogan Battlemaster
+,Kaidan Alenko,1,1,Sentinal|Alliance Officer|Spectre
+,Ashley Williams,1,2,Soldier|Alliance Officer|Spectre
+,Richard L. Jenkins,1,1,Alliance Marine
+,David Anderson,1,1,Alliance Officer|Citadel Councilor|Alliance Admiral
+,Karin Chakwas,1,2,Alliance Medical Doctor
+,Jeff "Joker" Moreau,1,1,Flight Lieutenant
+
+,Donnel Udina,1,1,Alliance Ambassador|Citadel Councilor
+,Tevos,2,3,Citadel Councilor
+,Irissa,2,3,Citadel Councilor
+,Valern,4,1,Citadel Councilor
+,Esheel,4,2,Citadel Councilor
+,Sparatus,3,1,Citadel Councilor
+,Quentius,3,1,Citadel Councilor
+,Nihlus Kryik,3,1,Spectre
+,Kate Bowman,1,2,Alliance Engineer
+,Tadius Ahern,1,1,Alliance Admiral
+,Alud Ochren,4,1,Pinnacle Station Tech Officer
+,Kirrahe,4,1,STG Officer
+,Sha'ira,2,3,Asari Consort
+,Chloe Michel,1,2,Citadel Clinician
+,Emily Wong,1,2,Journalist
+,Fist,1,1,Crime Lord
+,Barla Von,7,1,Financial Adviser
+,Conrad Verner,1,1,Commander Shepard's Biggest Fan
+,Rita,1,2,Waitress
+,Jenna,1,2,Waitress|C-Sec Informant
+,Doran,7,1,Flux Owner
+,Chellick,3,1,C-Sec Detective
+,Jax,6,1,Krogan Arms Dealer
+,Harkin,1,1,C-Sec Officer
+,Venari Pallin,3,1,C-Sec Executor
+,Septimus Oraka,3,1,Turian General
+,Xeltan,8,1,Elcor Diplomat
+,Calyn,8,1,Elcor Ambassador
+,Din Korlack,7,1,Volus Ambassador
+,Morlan,4,1,Salarian Merchant
+,Chorban,4,1,Salarian Scientist
+,Jahleed,7,1,Volus Scientist
+,Schells,4,1,Salarian Inventor
+,Samesh Bhatia,1,1,Widower
+,Nirali Bhatia,1,2,Alliance Marine
+,Ka'hairal Balak,11,1,Batarian Terrorist Captain
+
+,Vidinos,3,1,Guard Captain
+,Hannah Shepard,1,2,Alliance Officer
+,Ernesto Zabaleta,1,1,Former Alliance Lieutenant
+,Finch,1,1,Tenth Street Reds Gangster
+,Girard,1,1,Alliance Lieutenant
+,Talitha,1,2,Former Slave
+,Doctor Saleon,4,1,Salarian Geneticist
+,Tonn Actus,3,1,Turian Pirate
+,Garoth,1,1,Council Petitioner
+,Rebekah Petrovsky,1,2,Citizen
+,Michael Petrovsky,1,1,Citizen
+,Jacob Petrovsky,1,1,Citizen
+,Boris Mikhailovich,1,1,Alliance Admiral
+,Khalisah al-Jilani,1,2,News Reporter
+,Steven Hackett,1,1,Alliance Admiral
+,Charles Saracino,1,1,Terra Firma Politician
+,Keeler,1,1,Alliance Diplomat
+
+,Fai Dan,1,1,Zhu's Hope Colonist
+,Arcelia Silva Martinez,1,2,Zhu's Hope Colonist
+,Hollis Blake,1,1,Zhu's Hope Colonist
+,Calantha Blake,1,2,Zhu's Hope Colonist
+,Davin Reynolds,1,1,Zhu's Hope Colonist
+,Greta Reynolds,1,2,Zhu's Hope Colonist
+,May O'Connell,1,2,Zhu's Hope Colonist
+,Macha Doyle,1,2,Zhu's Hope Colonist
+,Inoste Ledra,4,1,Salarian Merchant
+,Ethan Jeong,1,1,ExoGeni Representative
+,Gavin Hossle,1,1,Freelance Scientist
+,Juliana Baynham,1,2,ExoGeni Scientist
+,Elizabeth Baynham,1,2,Research Assistant
+,Mallene Calis,2,3,Armali Council Representative
+,Rafael Vargas,1,1,Binary Helix Representative
+,Thorian,21,3,Sentient Plant
+
+,Opold,9,3,Hanar Merchant
+,Inamorda,6,1,Krogan Bounty Hunter
+
 ,Saren Arterius,3,1,Rogue Spectre
 ,Matriarch Benezia,2,3,Asari Matriarch
 ,Soverign,18,3,Reaper Vanguard
+
 ,Kasumi Goto,1,2,Master Thief
 ,Grunt,6,1,Krogan Berserker
 ,Thane Krios,10,1,Drell Assassin
