@@ -1,16 +1,16 @@
-id,name,species,gender,roles
-1,Commander Shepard,1,1,N7 Alliance Marine|Commanding Officer|Spectre
-2,Commander Shepard,1,2,N7 Alliance Marine|Commanding Officer|Spectre
-3,Liara T'Soni,2,3,Asari Scientist|Pure Biotic
-4,Garrus Vakarian,3,1,Turian Agent|Turian Rebel
-5,Tali'Zorah,5,2,Quarian Machinist
-6,Urdnot Wrex,6,1,Krogan Battlemaster
-7,Kaidan Alenko,1,1,Sentinal|Alliance Officer|Spectre
-8,Ashley Williams,1,2,Soldier|Alliance Officer|Spectre
-9,Jeff "Joker" Moreau,1,1,Flight Lieutenant|Chief Helmsman
-10,Karin Chakwas,1,2,Alliance Medical Doctor
-11,Charles Pressly,1,1,Alliance Officer|Chief Navigator|Executive Officer
-12,Greg Adams,1,1,Alliance Engineer
-13,David Anderson,1,1,Alliance Officer|Citadel Councilor|Alliance Admiral
-14,Richard L. Jenkins,1,1,Alliance Marine
-15,Private Fredricks,1,1,Alliance Marine
+id,name,species,gender,roles,aliases
+1,John Shepard,1,1,N7 Alliance Marine|Commanding Officer (Normandy)|Spectre,Commander Shepard
+2,Jane Shepard,1,2,N7 Alliance Marine|Commanding Officer (Normandy)|Spectre,Commander Shepard
+3,Liara T'Soni,2,3,Asari Scientist|Pure Biotic,Doctor T'Soni|Shadow Broker
+4,Garrus Vakarian,3,1,Turian Agent|Turian Rebel,Archangel
+5,Tali'Zorah,5,2,Quarian Machinist,Tali'Zorah nar Rayya|Tali'Zorah vas Neema|Tali'Zorah vas Normandy
+6,Urdnot Wrex,6,1,Krogan Battlemaster,
+7,Kaidan Alenko,1,1,Sentinal|Alliance Officer|Staff Lieutenant|Marine Detail Commander (Normandy),
+8,Ashley Williams,1,2,Soldier|Alliance Officer|Gunnery Chief|Marine (Normandy),
+9,Jeff Moreau,1,1,Alliance Officer|Flight Lieutenant|Chief Helmsman (Normandy),Joker
+10,Karin Chakwas,1,2,Alliance Medical Doctor|Chief Medical Officer (Normandy),Doctor Chakwas
+11,Charles Pressly,1,1,Alliance Officer|Chief Navigator (Normandy)|Executive Officer (Normandy),
+12,Greg Adams,1,1,Alliance Engineer|Lieutenant|Chief Engineer (Normandy),
+13,Richard L. Jenkins,1,1,Alliance Marine|Marine (Normandy),
+14,Private Fredricks,1,1,Alliance Marine|Marine (Normandy),
+15,David Anderson,1,1,Alliance Officer|Captain|Citadel Councilor,

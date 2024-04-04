@@ -22,6 +22,7 @@ export const characters = sqliteTable("characters", {
   species: integer("species").references(() => species.id),
   gender: integer("gender").references(() => genders.id),
   roles: text("roles"), 
+  aliases: text("aliases"),
 })
 
 export type Character = typeof characters.$inferSelect
