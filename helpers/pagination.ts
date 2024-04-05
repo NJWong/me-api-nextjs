@@ -1,4 +1,4 @@
-export function getPaginationMeta(searchParams: URLSearchParams) {
+export function getPaginationParams(searchParams: URLSearchParams) {
   const limitParam = searchParams.get('limit')
   const limit = limitParam !== null ? Math.min(parseInt(limitParam), 20) : 10
 
