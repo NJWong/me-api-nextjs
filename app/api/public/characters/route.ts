@@ -1,16 +1,28 @@
 import { characters } from "@/drizzle/schema"
+import { getCharacterFilterParams } from "@/helpers/filters"
 import { getPaginationParams } from "@/helpers/pagination"
 import { db } from "@/lib/db"
-import { count } from "drizzle-orm"
+import { and, count, eq } from "drizzle-orm"
 import { NextRequest } from "next/server"
 
 export async function GET(request: NextRequest) {  
   try {
     const searchParams = request.nextUrl.searchParams
     const { limit, offset } = getPaginationParams(searchParams)
+    const { gender, species } = getCharacterFilterParams(searchParams)
 
     const total = await db.select({ value: count() }).from(characters)
-    const result = await db.select().from(characters).orderBy(characters.id).limit(limit).offset(offset)
+    const result = await db.select()
+      .from(characters)
+      .where(
+        and(
+          gender ? eq(characters.gender, gender) : undefined,
+          species ? eq(characters.species, species) : undefined,
+        )
+      )
+      .orderBy(characters.id)
+      .limit(limit)
+      .offset(offset)
 
     const data = result.map((character) => ({
       id: character.id,
