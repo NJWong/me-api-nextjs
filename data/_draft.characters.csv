@@ -1,31 +1,13 @@
-,Donnel Udina,1,1,Alliance Ambassador|Citadel Councilor
-,Tevos,2,3,Citadel Councilor
-,Irissa,2,3,Citadel Councilor
-,Valern,4,1,Citadel Councilor
-,Esheel,4,2,Citadel Councilor
-,Sparatus,3,1,Citadel Councilor
-,Quentius,3,1,Citadel Councilor
-,Nihlus Kryik,3,1,Spectre
-,Kate Bowman,1,2,Alliance Engineer
-,Tadius Ahern,1,1,Alliance Admiral
-,Alud Ochren,4,1,Pinnacle Station Tech Officer
-,Kirrahe,4,1,STG Officer
-,Sha'ira,2,3,Asari Consort
-,Chloe Michel,1,2,Citadel Clinician
-,Emily Wong,1,2,Journalist
-,Fist,1,1,Crime Lord
-,Barla Von,7,1,Financial Adviser
+citadel
+,Xeltan,8,1,Elcor Diplomat
+,Calyn,8,1,Elcor Ambassador
 ,Conrad Verner,1,1,Commander Shepard's Biggest Fan
 ,Rita,1,2,Waitress
 ,Jenna,1,2,Waitress|C-Sec Informant
 ,Doran,7,1,Flux Owner
 ,Chellick,3,1,C-Sec Detective
 ,Jax,6,1,Krogan Arms Dealer
-,Harkin,1,1,C-Sec Officer
-,Venari Pallin,3,1,C-Sec Executor
 ,Septimus Oraka,3,1,Turian General
-,Xeltan,8,1,Elcor Diplomat
-,Calyn,8,1,Elcor Ambassador
 ,Din Korlack,7,1,Volus Ambassador
 ,Morlan,4,1,Salarian Merchant
 ,Chorban,4,1,Salarian Scientist
@@ -48,9 +30,10 @@
 ,Jacob Petrovsky,1,1,Citizen
 ,Boris Mikhailovich,1,1,Alliance Admiral
 ,Khalisah al-Jilani,1,2,News Reporter
-,Steven Hackett,1,1,Alliance Admiral
 ,Charles Saracino,1,1,Terra Firma Politician
 ,Keeler,1,1,Alliance Diplomat
+
+feros
 ,Fai Dan,1,1,Zhu's Hope Colonist
 ,Arcelia Silva Martinez,1,2,Zhu's Hope Colonist
 ,Hollis Blake,1,1,Zhu's Hope Colonist
@@ -67,11 +50,27 @@
 ,Mallene Calis,2,3,Armali Council Representative
 ,Rafael Vargas,1,1,Binary Helix Representative
 ,Thorian,21,3,Sentient Plant
+
+novaria
 ,Opold,9,3,Hanar Merchant
 ,Inamorda,6,1,Krogan Bounty Hunter
+
+virmire
+,Kirrahe,4,1,STG Officer
+
+bring down the sky
+,Kate Bowman,1,2,Alliance Engineer
+,Tadius Ahern,1,1,Alliance Admiral
+
+pinnacle station
+,Alud Ochren,4,1,Pinnacle Station Tech Officer
+
+main enemies
 ,Saren Arterius,3,1,Rogue Spectre
 ,Matriarch Benezia,2,3,Asari Matriarch
 ,Soverign,18,3,Reaper Vanguard
+
+mass effect 2
 ,Kasumi Goto,1,2,Master Thief
 ,Grunt,6,1,Krogan Berserker
 ,Thane Krios,10,1,Drell Assassin
@@ -85,6 +84,8 @@
 ,Jacob Taylor,1,1,Cerberus Operative
 ,EDI,19,3,Cerberus Artificial Intelligence
 ,Kelly Chambers,1,2,Cerberus Yeoman
+
+mass effect 3
 ,Javik,16,1,Vengeful Ancient
 ,James Vega,1,1,Arms Master
 ,Steve Cortez,1,1,Alliance Pilot
