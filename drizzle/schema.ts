@@ -30,7 +30,7 @@ export type NewCharacter = typeof characters.$inferInsert
 
 export const affiliations = sqliteTable("affiliations", {
   id: integer("id").primaryKey(),
-  name: text("name"),
+  name: text("name").notNull(),
 })
 
 export type Affiliation = typeof affiliations.$inferSelect
@@ -38,7 +38,7 @@ export type NewAffiliation = typeof affiliations.$inferInsert
 
 export const planets = sqliteTable("planets", {
   id: integer("id").primaryKey(),
-  name: text("name"),
+  name: text("name").notNull(),
 })
 
 export type Planet = typeof planets.$inferSelect
