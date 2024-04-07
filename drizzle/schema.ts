@@ -51,3 +51,10 @@ export const shipClasses = sqliteTable("ship_classes", {
 
 export type ShipClass = typeof shipClasses.$inferSelect
 export type NewShipClass = typeof shipClasses.$inferInsert
+
+export const ships = sqliteTable("ships", {
+  id: integer("id", { mode: 'number' }).primaryKey({ autoIncrement: true }),
+  name: text("name").notNull(),
+  ship_class: integer("ship_class").references(() => shipClasses.id).notNull(),
+  affiliation: integer("affiliation").references(() => affiliations.id).notNull(),
+})
