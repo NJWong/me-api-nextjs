@@ -43,3 +43,11 @@ export const planets = sqliteTable("planets", {
 
 export type Planet = typeof planets.$inferSelect
 export type NewPlanet = typeof planets.$inferInsert
+
+export const shipClasses = sqliteTable("ship_classes", {
+  id: integer("id").primaryKey(),
+  name: text("name").notNull(),
+})
+
+export type ShipClass = typeof shipClasses.$inferSelect
+export type NewShipClass = typeof shipClasses.$inferInsert
