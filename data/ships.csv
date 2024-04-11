@@ -1,1 +1,9 @@
-id,name,ship_class,affiliation
+id,name,ship_class,affiliations
+1,SSV Normandy SR-1,20,2
+2,Soverign,24,25
+3,Destiny Ascension,23,12
+4,Normandy SR-2,20,23
+5,SSV Normandy SR-2,20,2
+6,Collector Cruiser,21,24
+7,Harbinger,24,25
+8,Shadow Broker Base,1,20
