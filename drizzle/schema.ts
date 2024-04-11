@@ -56,5 +56,5 @@ export const ships = sqliteTable("ships", {
   id: integer("id", { mode: 'number' }).primaryKey({ autoIncrement: true }),
   name: text("name").notNull(),
   ship_class: integer("ship_class").references(() => shipClasses.id).notNull(),
-  affiliation: integer("affiliation").references(() => affiliations.id).notNull(),
+  affiliations: integer("affiliations").references(() => affiliations.id).notNull(),
 })
