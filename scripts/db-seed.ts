@@ -5,7 +5,7 @@ import fs from 'fs'
 import Papa from 'papaparse'
 import { z } from 'zod'
 import { createInsertSchema } from 'drizzle-zod'
-import { affiliations, characters, genders, shipClasses, species } from '@/drizzle/schema'
+import { affiliations, characters, genders, shipClasses, ships, species } from '@/drizzle/schema'
 
 dotenv.config({
   path: ".env.local"
@@ -75,6 +75,22 @@ async function seedSpecies(db: LibSQLDatabase) {
   await db.insert(species).values(validatedData)
 }
 
+async function seedShips(db: LibSQLDatabase) {
+  console.log('Seeding ships table...')
+  const data = fs.readFileSync('data/ships.csv', { encoding: 'utf-8' })
+  const parsedCsv = Papa.parse(data, { header: true, dynamicTyping: true })
+
+  const insertSchema = createInsertSchema(ships)
+  const validatedData: Array<z.TypeOf<typeof insertSchema>> = []
+
+  for (const row of parsedCsv.data) {
+    const validatedRow = insertSchema.parse(row)
+    validatedData.push(validatedRow)
+  }
+
+  await db.insert(ships).values(validatedData)
+}
+
 async function seedCharacters(db: LibSQLDatabase) {
   console.log('Seeding characters table...')
   const data = fs.readFileSync('data/characters.csv', { encoding: 'utf-8' })
@@ -104,6 +120,7 @@ async function main() {
   await seedAffiliations(db)
   await seedSpecies(db)
   await seedGenders(db)
+  await seedShips(db)
   await seedCharacters(db)
   console.log('--- db-seed completed ---\n')
 }
